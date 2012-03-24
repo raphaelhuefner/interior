@@ -28,5 +28,10 @@ function talkToTineye(imageFileUri) {
   };
 
   var ft = new FileTransfer();
-  ft.upload(imageFileUri, "http://multicolorengine.tineye.com/rest/color_search/", win, fail, options);
+  ft.upload(imageFileUri, "http://multicolorengine.tineye.com/hackdays_flickr/rest/color_search/", win, fail, options);
 };
+
+
+// curl http://multicolorengine.tineye.com/hackdays_flickr/rest/color_search/ -F "image=@staticmap.png"
+// http://multicolorengine.tineye.com/hackdays_flickr/rest/extract_colors/
+// http://multicolorengine.tineye.com/hackdays_flickr/_static/plain_explorer.html
