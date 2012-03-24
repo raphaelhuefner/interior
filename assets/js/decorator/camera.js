@@ -2,6 +2,7 @@ function dump_pic(data) {
   store_save(data);
   $('#gotten-pictures').append('<p><img src="' + data + '" /><br />' + data + '</p>');
   consolog("new pic = " + data);
+  talkToTineye(data);
 }
 
 function fail(msg) {
