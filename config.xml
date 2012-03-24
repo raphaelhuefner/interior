@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.phonegap.getting.started"
+	id		= "com.raphaelhuefner.hackvan2012.decorator"
 	version 	= "1.0.0">
 
-	<name>PhoneGap: Getting Started</name>
+	<name>Decorator</name>
 
 	<description>
-		A template for getting started with PhoneGap development and build.phonegap.com
+		HackVAN 2012
 	</description>
 
 	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+		email="david.gelbart@gmail.com">
+		David Gelbart
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
-	<feature name="http://api.phonegap.com/1.0/network"/>
+  <!-- to enable individual permissions use the following examples -->
+  <feature name="http://api.phonegap.com/1.0/battery"/>
+  <feature name="http://api.phonegap.com/1.0/camera"/>
+  <feature name="http://api.phonegap.com/1.0/contacts"/>
+  <feature name="http://api.phonegap.com/1.0/file"/>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <feature name="http://api.phonegap.com/1.0/media"/>
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/notification"/>
 
 	<preference name="orientation" value="portrait" />
 </widget>
