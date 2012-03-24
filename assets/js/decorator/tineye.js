@@ -19,18 +19,20 @@ function talkToTineye(imageFileUri) {
   }
   
   var options = new FileUploadOptions();
-  options.fileKey="image";
+  options.fileKey="images[0]";
   options.fileName=imageFileUri.substr(imageFileUri.lastIndexOf('/')+1);
-  options.mimeType="text/plain";
+  options.mimeType="image/jpeg";
   
   options.params = {
-    min_score: '0'
-    , limit: '10'
+    color_format: 'rgb'
+    , limit: '20'
     , offset: '0'
+    , pretty: 'true'
+    , max_num_matches: '5'
   };
 
   var ft = new FileTransfer();
-  ft.upload(imageFileUri, "http://multicolorengine.tineye.com/hackdays_flickr/rest/color_search/", win, fail, options);
+  ft.upload(imageFileUri, "http://multicolorengine.tineye.com/hackdays_flickr/rest/extract_colors/", win, fail, options);
 };
 
 
