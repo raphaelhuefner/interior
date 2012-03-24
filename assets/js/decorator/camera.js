@@ -1,5 +1,5 @@
 function dump_pic(data) {
-  images.push(data);
+  pics.push(data);
   $('#gotten-pictures').append('<p><img src="' + data + '" /><br />' + data + '</p>');
   consolog("new pic = " + data);
 }

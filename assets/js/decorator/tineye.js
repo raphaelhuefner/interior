@@ -1,6 +1,6 @@
 function talkToTineye(imageFileUri) {
   if (undefined == typeof imageFileUri) {
-    imageFileUri = images[images.length - 1];
+    imageFileUri = pics[pics.length - 1];
   }
 
   consolog("talkToTineye, use: " + imageFileUri);
