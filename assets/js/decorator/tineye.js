@@ -3,6 +3,8 @@ function talkToTineye(imageFileUri) {
     imageFileUri = images[images.length - 1];
   }
 
+  consolog("talkToTineye, use: " + imageFileUri);
+
   // !! Assumes variable fileURI contains a valid URI to a  text file on the device
   var win = function(r) {
       consolog("Code = " + r.responseCode);
