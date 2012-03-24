@@ -25,10 +25,7 @@ function talkToTineye(imageFileUri) {
   
   options.params = {
     color_format: 'rgb'
-    , limit: '20'
-    , offset: '0'
-    , pretty: 'true'
-    , max_num_matches: '5'
+    , limit: '3'
   };
 
   var ft = new FileTransfer();
@@ -37,5 +34,5 @@ function talkToTineye(imageFileUri) {
 
 
 // curl http://multicolorengine.tineye.com/hackdays_flickr/rest/color_search/ -F "image=@staticmap.png"
-// http://multicolorengine.tineye.com/hackdays_flickr/rest/extract_colors/
+// http://multicolorengine.tineye.com/hackdays_flickr/rest/extract_colors/ -F "image=@assets/img/staticmap.png" -d "color_format=rgb" -d "color_format=rgb"
 // http://multicolorengine.tineye.com/hackdays_flickr/_static/plain_explorer.html
