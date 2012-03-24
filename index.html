@@ -4,6 +4,7 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
 		<title>Training App</title>
 		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
 		
 		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
 		
@@ -12,6 +13,8 @@
 		<script src="assets/js/decorator/store.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/decorator/camera.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/decorator/tineye.js" type="text/javascript" charset="utf-8"></script>
+				<script src="assets/js/script.js" type="text/javascript" charset="utf-8"></script>
+
 <!--		
 		<script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
@@ -28,14 +31,84 @@
 		-->
 	</head>
 	<body>
- 		<div id="title_bar">Decorator</div>
+	
+	
+	<div id="wrapper">
 
-    <a href="#" class="app_button" onclick="getPic();">Get a Picture</a>
-    <a href="#" class="app_button" onclick="talkToTineye();">Talk to Tineye</a>
+	<div id="page1">
+		
+		 <!--   <div id="title_bar">Decorator</div> -->
 
-    <div id="gotten-pictures"></div>
+		
+   	 	<a href="#page2" onclick="getPic();"> <div id="buttonTake"> Take a picture </div> </a>
+    	<a href="#page2" onclick="talkToTineye();"> <div id="buttonChoose"> talk to tineye </div> </a>
+    	 <div id="gotten-pictures"></div>
 
     <div id="fake-console"></div>
+    </div>
+    
+    
+    
+
+   
+
+   
+    
+    
+    <div id="page2"> 
+    
+    	<aside> 
+        	image goes here 
+            <div id="inputImage"> 
+            	<img src="assets/img/_DSC0134.JPG"/>
+            </div>
+            <a href="#page1"> <div class = "back"> BACK </div> </a>
+        </aside>
+        
+        <section> 
+        	choose a palette: <br>
+            <a href="#page3"><div class="palette"> palette 1 </div> </a>
+            <a href="#page3"><div class="palette"> palette 2 </div> </a>       
+        </section>
+        
+    </div>
+    
+    
+    
+    
+    
+    <div  id="page3">
+    	
+        <aside>
+        	<h6> IMAGES: </h6> 
+            <div id = "thumbWrapper">
+           		<a class="thumbnail"> </a>
+    	        <a class="thumbnail"> </a>
+        	    <a class="thumbnail"> </a>
+      	    	<a class="thumbnail"> </a>
+            	<a class="thumbnail"> </a>
+     	       	<a class="thumbnail"> </a>
+            	<a class="thumbnail"> </a>
+            	<a class="thumbnail"> </a>
+            	<a class="thumbnail"> </a>
+            	<a href="#page2"><div class = "back"> BACK </div></a>
+            </div>
+        </aside>
+        
+        <section>
+        	selected image appears here
+            <div id="outputImage"> OUTPUTTED IMAGE GOES HERE </div>
+            <div id="again"> do it again </div>
+        </section>
+    </div>
+
+</div>
+
+
+
+
+
+ 		
 
 <!--
 		<div id="welcome" class="view">

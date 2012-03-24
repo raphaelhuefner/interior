@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#wrapper {
+	width: 960px;
+	height: 640px;
+	left: 0px;
+}
+
+#page1 {
+	width: 960px;
+	height: 640px;
+	position:relative;
+	float: left;
+	left: 0px;
+	background-color: black;
+	display: block;
+}
+
+#buttonTake {
+	display:block;
+	width: 600px;
+	height: 128px;
+	position: absolute;
+	top: 128px;
+	left: 180px;
+	background-color: white;
+}
+
+#buttonChoose {
+	display:block;
+	width: 600px;
+	height: 128px;
+	position: absolute;
+	top: 384px;
+	left: 180px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+/*=============================================================================================================================*/
+aside {
+	display: block;
+	position: absolute;
+	left: 0px;
+	height: 640px;
+	width: 33%;
+	border-right: 2px solid black;
+}
+
+section {
+	display: block;
+	position: absolute;
+	left: 320px;
+	width: 66%;
+	height: 640px;
+}
+
+div.back {
+	width: 100px;
+	height: 30px;
+	background-color: black;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+
+/*=============================================================================================================================*/
+
+#page2 {
+	width: 960px;
+	height: 640px;
+	position:absolute;
+	left: 960px;
+	background-color: red;
+	color: white;
+	display: block;
+}
+
+#inputImage {
+	margin: auto;
+	position: relative;
+	top: 240px;
+	display: block;
+	background-color: white;
+	max-width: 90%;
+	max-height: 75%;
+	text-align: center;
+}
+
+.palette {
+	margin: 40px auto;
+	width: 80%;
+	height: 100px;
+	background-color: black;
+}
+
+
+
+/*=============================================================================================================================*/
+
+#page3 {
+	width: 960px;
+	height: 640px;
+	position:absolute;
+	left: 1920px;
+	background-color: yellow;
+	display: block;
+}
+
+#thumbWrapper {
+	background-color: black;
+	width: 90%;
+	margin: auto;
+	height: 500px;
+	top: 40px;
+	overflow:scroll;
+}
+
+.thumbnail {
+	height: 100px;
+	width: 100px;
+	display: block;
+	position: relative;
+	float: left;
+	margin: 10px;
+	background-color: white;
+}
+
+#outputImage {
+	display: block;
+	max-width: 90%;
+	max-height: 75%;
+	background-color: white;
+	margin: auto;
+	position: relative;
+	top: 70px;
+	
+}
+
+#again {
+	width: 100px;
+	height: 30px;
+	background-color: black;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	color: white;
+}
+
+/*=============================================================================================================================*/
+
+/* js will apply these classes to all pages, choosing appropriately depending what link was clicked on */
+
+div.translateLeft {
+	transform:translate(-960px,0px);
+	-ms-transform:translate(-960px,0px); /* IE 9 */
+	-moz-transform:translate(-960px,0px); /* Firefox */
+	-webkit-transform:translate(-960px,0px); /* Safari and Chrome */
+	-o-transform:translate(-960px,0px); /* Opera */
+}
+
+div.translateRight {
+	transform:translate(960px,0px);
+	-ms-transform:translate(960px,0px); /* IE 9 */
+	-moz-transform:translate(960px,0px); /* Firefox */
+	-webkit-transform:translate(960px,0px); /* Safari and Chrome */
+	-o-transform:translate(960px,0px); /* Opera */
+}
+
+
