@@ -1,5 +1,5 @@
 function dump_pic(data) {
-    $('#gotten-pictures').append('<p><img src="' + data + '" />' + data + '</p>');
+    $('#gotten-pictures').append('<p><img src="' + data + '" /><br />' + data + '</p>');
 }
 
 function fail(msg) {
@@ -8,6 +8,6 @@ function fail(msg) {
 
 function show_pic() {
     navigator.camera.getPicture(dump_pic, fail, {
-        quality : 50, destinationType : Camera.DestinationType.DATA_URL
+        quality : 50, destinationType : Camera.DestinationType.FILE_URI
     });
 }
