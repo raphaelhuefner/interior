@@ -11,13 +11,13 @@ function getColorsFromTineye(imageFileUri) {
       //consolog("Code = " + r.responseCode);
       //consolog("Response = " + r.response);
       //consolog("Sent = " + r.bytesSent);
-  }
+  };
   
   var fail = function(error) {
-      alert("An error has occurred: Code = " = error.code);
+      alert("An error has occurred: Code = " + error.code);
       consolog("upload error source " + error.source);
       consolog("upload error target " + error.target);
-  }
+  };
   
   var options = new FileUploadOptions();
   options.fileKey="images[0]";
@@ -45,7 +45,7 @@ var data = {};
     data['weights[' + count + ']'] = c.weight;
 //    colors.push(c.color);
   //  weights.push(c.weight);
-  consolog(c.color + ' ' + c.weight);
+    consolog(c.color + ' ' + c.weight);
     count++;
   }
 
@@ -53,14 +53,14 @@ var data = {};
   var win = function(data, textStatus, jqXHR) {
       consolog("getImagesFromTineye Code = " + textStatus);
       consolog("getImagesFromTineye Response = " + data);
-  }
-  
+  };
+
   var fail = function(error) {
-      alert("An error has occurred: Code = " = error.code);
+      alert("An error has occurred: Code = " + error.code);
       consolog("upload error source " + error.source);
       consolog("upload error target " + error.target);
-  }
-  
+  };
+
   $.ajax('http://multicolorengine.tineye.com/hackdays_flickr/rest/color_search/',
     {
       data: data
